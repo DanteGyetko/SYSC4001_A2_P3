@@ -177,6 +177,7 @@ std::tuple<std::string, std::string, int> simulate_trace(std::vector<std::string
             //With the exec's trace (i.e. trace of external program), run the exec (HINT: think recursion)
             auto [execution_out, status_out, time_out] = simulate_trace(exec_traces, current_time, vectors, delays, external_files, current, wait_queue);
             execution += execution_out;
+            system_status += status_out;
             current_time = time_out;
 
             ///////////////////////////////////////////////////////////////////////////////////////////
