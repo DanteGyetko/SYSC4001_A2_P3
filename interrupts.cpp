@@ -137,8 +137,7 @@ std::tuple<std::string, std::string, int> simulate_trace(std::vector<std::string
             free_memory(&current);
             current.program_name = program_name;
             current.size = size;
-
-            //THESE TWO SHOULD BE RANDOM [1, 10]    
+  
             int marking_time = 3;
             int pcb_time = 6; 
 
