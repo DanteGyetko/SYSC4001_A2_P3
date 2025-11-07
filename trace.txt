@@ -4,3 +4,4 @@ EXEC program4, 20
 IF_PARENT, 0
 EXEC program1, 10
 ENDIF, 0
+CPU, 1000
